@@ -1,0 +1,28 @@
+PS C:\Users\user03> mkdir git_cahllenge
+
+
+    ディレクトリ: C:\Users\user03
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        2025/02/18     14:52                git_cahllenge
+
+
+PS C:\Users\user03> cd .\git_cahllenge\
+PS C:\Users\user03\git_cahllenge> git init
+Initialized empty Git repository in C:/Users/user03/git_cahllenge/.git/
+PS C:\Users\user03\git_cahllenge> Set-Content -Path hello_world.txt -Value "Hello, world!" -Encoding UTF8
+PS C:\Users\user03\git_cahllenge> git add hello_world.txt
+PS C:\Users\user03\git_cahllenge> git commit -m "hello_world.txtを追加"
+[main (root-commit) c0dab29] hello_world.txtを追加
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello_world.txt
+PS C:\Users\user03\git_cahllenge> Set-Content -Path hello_world.txt -Value "こんにちは、世界！" -Encoding UTF8
+PS C:\Users\user03\git_cahllenge>  git add hello_world.txt
+PS C:\Users\user03\git_cahllenge> git commit -m "日本語訳を追記"       
+[main dd463d9] 日本語訳を追記
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+PS C:\Users\user03\git_cahllenge> git log --oneline
+dd463d9 (HEAD -> main) 日本語訳を追記
+c0dab29 hello_world.txtを追加
